@@ -11,6 +11,15 @@ public class Concert {
 	public Concert() {
 		super();
 	}
+	
+	
+
+	public Concert(Date date) {
+		super();
+		this.date = date;
+	}
+
+
 
 	public Tournee getTournee() {
 		return tournee;
