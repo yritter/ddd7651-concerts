@@ -29,11 +29,21 @@ public class GestionTourneesApplication {
 
 		try {
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/M/yyyy");
-			String dateInString = "31/08/2021";
-			Date dateConcert = sdf.parse(dateInString);
-
-			Concert concert01 = new Concert(dateConcert);
+			
+			String stringDate01 = "31/08/2021";
+			Date dateConcert01 = sdf.parse(stringDate01);
+			Concert concert01 = new Concert(dateConcert01);
 			concertsPrevus.add(concert01);
+			
+			String stringDate02 = "15/09/2021";
+			Date dateConcert02 = sdf.parse(stringDate02);
+			Concert concert02 = new Concert(dateConcert02);
+			concertsPrevus.add(concert02);
+			
+			String stringDate03 = "02/05/2021";
+			Date dateConcert03 = sdf.parse(stringDate03);
+			Concert concert03 = new Concert(dateConcert03);
+			concertsPrevus.add(concert03);
 
 		} catch (ParseException e) {
 			System.out.println("Erreur lors d'une tentative de creation de date. ");
