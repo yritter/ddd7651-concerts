@@ -23,6 +23,5 @@ public class Salle {
 
 	public void setCapacite(int capacite) {
 		this.capacite = capacite;
-	}
-	
+	}	
 }
